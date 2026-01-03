@@ -1,0 +1,87 @@
+import { Butterfly } from "lucide-react";
+
+export default function App() {
+  return (
+    <div style={{ fontFamily: "Arial, sans-serif", background: "#f9f6f2", color: "#333" }}>
+      
+      {/* Navigation */}
+      <nav style={{ background: "#fff", padding: "16px", position: "sticky", top: 0 }}>
+        <strong>🦋 AS I AM</strong>
+        <span style={{ float: "right" }}>
+          <a href="#home">Home</a> |{" "}
+          <a href="#about">About</a> |{" "}
+          <a href="#programs">Programs</a> |{" "}
+          <a href="#involved">Get Involved</a> |{" "}
+          <a
+            href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-6517"
+            target="_blank"
+          >
+            Donate
+          </a>
+        </span>
+      </nav>
+
+      {/* Home */}
+      <section id="home" style={{ padding: "60px", textAlign: "center" }}>
+        <Butterfly size={48} color="#c7a27c" />
+        <h1>AS I AM Personal Development Program</h1>
+        <em>
+          “Knowing and loving who you are is the first step in believing who you can be.”
+        </em>
+        <p>
+          Empowering young girls and young women to build self-esteem, identity,
+          and inner strength through guided personal growth and supportive community.
+        </p>
+        <a
+          href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-6517"
+          target="_blank"
+          style={{
+            display: "inline-block",
+            marginTop: "20px",
+            padding: "12px 24px",
+            background: "#c7a27c",
+            color: "#fff",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          Donate
+        </a>
+      </section>
+
+      {/* About */}
+      <section id="about" style={{ padding: "60px", background: "#fff" }}>
+        <h2>About AS I AM</h2>
+        <p>
+          AS I AM Personal Development Program was created to support young girls
+          and young women during critical stages of identity formation, confidence
+          building, and emotional growth.
+        </p>
+      </section>
+
+      {/* Programs */}
+      <section id="programs" style={{ padding: "60px" }}>
+        <h2>Our Programs</h2>
+        <ul>
+          <li><strong>Self-Esteem & Identity</strong></li>
+          <li><strong>Mentorship & Workshops</strong></li>
+          <li><strong>Community Engagement</strong></li>
+        </ul>
+      </section>
+
+      {/* Get Involved */}
+      <section id="involved" style={{ padding: "60px", background: "#f1ebe4" }}>
+        <h2>Get Involved</h2>
+        <p>
+          Support AS I AM by volunteering, partnering, or spreading awareness.
+        </p>
+      </section>
+
+      {/* Footer */}
+      <footer style={{ padding: "20px", textAlign: "center", fontSize: "14px" }}>
+        © {new Date().getFullYear()} AS I AM Personal Development Program
+      </footer>
+    </div>
+  );
+}
+
